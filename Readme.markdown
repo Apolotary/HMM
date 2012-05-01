@@ -1,0 +1,1 @@
+Hidden Markov Models simple example based on this article: http://www.codeproject.com/Articles/69647/Hidden-Markov-Models-in-C
