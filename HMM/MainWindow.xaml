@@ -1,0 +1,24 @@
+﻿<Window x:Class="HMM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="HMM" Height="270" Width="508" Loaded="Window_Loaded">
+    <Grid>
+        <TextBox Height="143" HorizontalAlignment="Left" Margin="12,25,0,0" Name="sequenceBox" VerticalAlignment="Top" Width="208" TextWrapping="NoWrap" MinLines="10" AcceptsReturn="True" AcceptsTab="True" Text="" TextChanged="sequenceBox_TextChanged" />
+        <Label Content="Please input sequences:" Height="28" HorizontalAlignment="Left" Margin="12,0,0,0" Name="label1" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,199,0,0" Name="charBox" VerticalAlignment="Top" Width="92" Text="2" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="128,199,0,0" Name="stateBox" VerticalAlignment="Top" Width="92" Text="3" />
+        <Label Content="# of characters" Height="28" HorizontalAlignment="Left" Margin="12,174,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="# of states" Height="28" HorizontalAlignment="Left" Margin="128,174,0,0" Name="label3" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="295,25,0,0" Name="likeBox" VerticalAlignment="Top" Width="92" Text="0.0001" />
+        <Label Content="Learn until average likelihood is only" Height="28" HorizontalAlignment="Left" Margin="221,0,0,0" Name="label4" VerticalAlignment="Top" />
+        <Label Content=" as little as:" Height="28" HorizontalAlignment="Left" Margin="221,23,0,0" Name="label5" VerticalAlignment="Top" />
+        <Button Content="Learn" Height="29" HorizontalAlignment="Left" Margin="393,22,0,0" Name="learnButton" VerticalAlignment="Top" Width="81" Click="learnButton_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="226,115,0,0" Name="inputSequenceBox" Text="" VerticalAlignment="Top" Width="161" />
+        <Label Content="Learned!" Height="28" HorizontalAlignment="Left" Margin="224,57,0,0" Name="learnLabel" VerticalAlignment="Top" IsEnabled="True" Visibility="Hidden" />
+        <Label Content="Input a sequence:" Height="28" HorizontalAlignment="Left" Margin="224,87,0,0" Name="label7" VerticalAlignment="Top" Width="250" />
+        <Label Content="The probability that this sequence belongs" Height="28" HorizontalAlignment="Left" Margin="226,140,0,0" Name="label8" VerticalAlignment="Top" Width="250" />
+        <Label Content="to the given class is:" Height="28" HorizontalAlignment="Left" Margin="226,165,0,0" Name="label9" VerticalAlignment="Top" Width="116" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="348,167,0,0" Name="probabilityBox" Text="" VerticalAlignment="Top" Width="126" />
+        <Button Content="Calculate" Height="29" HorizontalAlignment="Left" Margin="393,109,0,0" Name="calculateBox" VerticalAlignment="Top" Width="81" Click="calculateBox_Click" IsEnabled="False" />
+    </Grid>
+</Window>
